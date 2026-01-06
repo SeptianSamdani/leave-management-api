@@ -30,12 +30,12 @@ class UserSeeder extends Seeder
         ]);
 
         // Create leave quota for employee
-        // LeaveQuota::create([
-        //     'user_id' => $employee->id,
-        //     'year' => now()->year,
-        //     'total' => 12,
-        //     'used' => 0,
-        //     'remaining' => 12,
-        // ]);
+        LeaveQuota::create([
+            'user_id' => $employee->id,
+            'year' => now()->year,
+            'total' => 12,
+            'used' => 0,
+            'remaining' => 12,
+        ]);
     }
 }

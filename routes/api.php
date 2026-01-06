@@ -50,3 +50,7 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::get('dashboard', [AdminLeaveController::class, 'dashboard']);
     });
 });
+
+Route::get('/test', function () {
+    return response()->json(['message' => 'API Working!']);
+});
